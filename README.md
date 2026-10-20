@@ -1,4 +1,4 @@
-# Surveying Forward and Inverse Computations
+1# Surveying Forward and Inverse Computations
 
 A small teaching repository for surveying students. It demonstrates using GitHub and Google Colab to run surveying calculations.
 
@@ -26,3 +26,27 @@ Replace `YOUR-USERNAME` and `YOUR-REPOSITORY` with your GitHub username and repo
 2. Run the first code cell to define the functions.
 3. Run the calculator cell and choose Forward or Inverse.
 4. Enter the requested coordinates, distance, and/or azimuth.
+-----------------------------------------------------------------------------
+
+2 # Consecutive Point Distance Calculator
+
+Google Colab notebook for calculating horizontal distances between consecutive surveying points.
+
+## Input format
+The supplied example `Survey_Points.txt` is comma-separated and contains these columns:
+
+- `P`: point identifier
+- `N`: Northing
+- `E`: Easting
+- `Z`: elevation (retained but not used for horizontal distance)
+
+## How to use
+1. Upload `Consecutive_Point_Distances.ipynb` to GitHub or open it in Google Colab.
+2. Put `Survey_Points.txt` (or your similarly structured CSV file) in Google Drive.
+3. Run the Drive connection cell and authorize access.
+4. Edit `file_path` to match the file's location in `MyDrive`.
+5. Run all cells in order.
+6. Download `Consecutive_Point_Distances.csv`.
+
+Points are processed in their original row order. Coordinates must be projected Easting/Northing in the same linear unit. Latitude/longitude in degrees require a geodesic method instead.
+
